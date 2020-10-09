@@ -21,7 +21,7 @@ $(document).ready(function(){
                     minlength: 4
                 },
                 number: {
-                    required: true,
+                    required: false,
                     minlength: 5
                 },
                 email: {
@@ -35,23 +35,23 @@ $(document).ready(function(){
             },
             messages: {
                 name: {
-                    required: "come on, you have a name, don't you?",
-                    minlength: "your name must consist of at least 2 characters"
+                    required: "Please enter your name.",
+                    minlength: "Your name must consist of at least 2 characters"
                 },
                 subject: {
-                    required: "come on, you have a subject, don't you?",
-                    minlength: "your subject must consist of at least 4 characters"
+                    required: "Please enter a subject.",
+                    minlength: "Your subject must consist of at least 4 characters"
                 },
                 number: {
-                    required: "come on, you have a number, don't you?",
-                    minlength: "your Number must consist of at least 5 characters"
+                    required: "Please enter your number.",
+                    minlength: "Your number must consist of at least 5 characters"
                 },
                 email: {
-                    required: "no email, no message"
+                    required: "I can't contact you back without an email."
                 },
                 message: {
-                    required: "um...yea, you have to write something to send this form.",
-                    minlength: "thats all? really?"
+                    required: "Please enter your message.",
+                    minlength: "Your message must consist of at least 20 characters"
                 }
             },
             submitHandler: function(form) {
